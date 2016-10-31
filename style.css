@@ -1,0 +1,23 @@
+#hello {
+  margin-top: 130px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+#facebook {
+  font-size: 60px;
+}
+
+#github {
+  font-size: 60px;
+}
+
+#linkedin {
+  font-size: 60px;
+}
+
+#social-buttons {
+  padding: 20px;
+}
