@@ -1,23 +1,47 @@
-#hello {
-  margin-top: 130px;
-}
-
 h1, p {
   text-align: center;
 }
 
 #facebook {
   font-size: 60px;
+  color: grey;
+}
+
+#facebook:hover {
+  color: black;
 }
 
 #github {
   font-size: 60px;
+  color: grey;
+}
+
+#github:hover {
+  color: black;
 }
 
 #linkedin {
   font-size: 60px;
+  color: grey;
+}
+
+#linkedin:hover {
+  color: black;
 }
 
 #social-buttons {
-  padding: 20px;
+  padding: 30px;
+}
+
+#hello {
+	margin-top: 140px;
+	background-color: #f1f1f1;
+	background-image: url(http://tiny.pl/gc7pq);
+	background-position: right -120px center;
+	background-repeat: no-repeat;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+	background-color: white;
 }
