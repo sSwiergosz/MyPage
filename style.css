@@ -1,55 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+figure.snip1137 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin-top: 5%;
+  width: 100%;
+  background: #000000;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1137 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1137 img {
+  max-width: 100%;
+}
+figure.snip1137 figcaption {
+  position: relative;
+  background-color: #ffffff;
+  padding: 25px;
+}
+figure.snip1137 h3 {
+  text-transform: uppercase;
+  margin: 0 0 15px;
+  font-weight: 400;
+}
+figure.snip1137 h3 span {
+  font-weight: 800;
+}
+figure.snip1137 p {
+  font-size: 0.1em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+}
+figure.snip1137 .icons {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+figure.snip1137 i {
+  margin-right: 5px;
+  display: inline-block;
+  font-size: 48px;
+  color: #000000;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: white;
+  opacity: 0;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+figure.snip1137 a {
+  opacity: 0.8;
+}
+
+figure.snip1137 a:hover {
+  opacity: 1;
+}
+figure.snip1137.orange {
+  background-color: #8ba6b2;
+}
+figure.snip1137.orange i {
+  color: #8ba6b2;
+}
+figure.snip1137:hover img,
+figure.snip1137.hover img {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+figure.snip1137:hover i,
+figure.snip1137.hover i {
+  opacity: 1;
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+}
+figure.snip1137:hover a:first-child i,
+figure.snip1137.hover a:first-child i {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+figure.snip1137:hover a:nth-child(2) i,
+figure.snip1137.hover a:nth-child(2) i {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1137:hover a:nth-child(3) i,
+figure.snip1137.hover a:nth-child(3) i {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip1546 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #9e9e9e;
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  margin: 10px 8px 5px;
+  position: relative;
+  text-align: center;
+  width: 70%;
+  height: 70%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-top: 5px solid #8ba6b2;
+}
+
+.snip1546 *,
+.snip1546 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.snip1546 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1546 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.snip1546 h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+  background-color: #8ba6b2;
+  margin: 0;
+  padding: 0 0 6px;
+}
+
+.snip1546 i {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  color: #8ba6b2;
+}
+
+.snip1546 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.snip1546:hover img,
+.snip1546.hover img {
+  opacity: 0.2;
+}
+
+.snip1546:hover i,
+.snip1546.hover i {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
 h1, p {
   text-align: center;
-}
-
-#facebook {
-  font-size: 60px;
-  color: grey;
-}
-
-#facebook:hover {
-  color: black;
-}
-
-#github {
-  font-size: 60px;
-  color: grey;
-}
-
-#github:hover {
-  color: black;
-}
-
-#linkedin {
-  font-size: 60px;
-  color: grey;
-}
-
-#linkedin:hover {
-  color: black;
-}
-
-#social-buttons {
-  padding: 30px;
-}
-
-#hello {
-  margin-top: 140px;
-  background-color: #f1f1f1;
-  background-image: url(http://tiny.pl/gc7pq);
-  background-position: right -120px center;
-  background-repeat: no-repeat;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 body {
   background-color: white;
 }
 
-#footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:40px;
-   color: grey;
+#random-text {
+  margin-top: 20%;
+}
+
+footer {
+	font-size: 20px;
+	font-style: faded;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	color: gray;
+}
+
+#desc {
+	font-size: 16px;
+	text-align: left;
+}
+
+#lorem {
+	padding: 60px;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.page {
+  margin-top: 50px;
 }

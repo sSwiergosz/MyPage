@@ -7,67 +7,118 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active" ><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Blog</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-globe"></span> News</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> About me</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
-                <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="dna.html">Seq modificator</a></li>
-                  <li><a href="#">Tool 2</a></li>
-                </ul>
-              </li>
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-check"></span> Register</a></li>
-            </ul>
+    <div class="page">
+      <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active" ><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Blog</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-globe"></span> News</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> About me</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/home/szymek/Desktop/studia/webapps/3/domowe/dna.html">Seq modificator</a></li>
+                    <li><a href="#">Tool 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-check"></span> Register</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
-    <div class="container">
-    	<div class="jumbotron" id="hello">
-        <h1>Welcome to my page!</h1>
-        <br>
-        <p>My name is Szymon and I'm a bioinformatics student.</p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row text-center" id="social-buttons">
-        <div>
-          <div class="col-md-4 text-right">
-            <a href="https://www.facebook.com/szymon.swiergosz" data-toogle="tooltip" title="My facebook profile" class="btn btn-social-icon btn-lg" id="facebook"><span class="fa fa-facebook-square"></span></a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://www.github.com/sSwiergosz" data-toogle="tooltip" title="My projects" class="btn btn-social-icon btn-lg" id="github"><span class="fa fa-github"></span></a>
-          </div>
-          <div class="col-md-4 text-left">
-            <a href="https://www.linkedin.com/in/szymon-świergosz-591347131" data-toogle="tooltip" title="My linkedin profile" class="btn btn-social-icon btn-lg" id="linkedin"><span class="fa fa-linkedin"></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
+        </nav>
+      </header>
 
-    <div id="footer">
+
       <div class="container">
-        <p>2016 &#174 Szymon Świergosz</p>
+          <div class="col-md-12">
+              <div class="row" id="hello">
+                  <figure class="snip1137 orange">
+                    <img src="/home/szymek/Desktop/studia/webapps/4/images/IMG_0517.JPG" id="my-img" />
+                    <div class="icons">
+                      <a href="http://www.facebook.com/szymon.swiergosz" data-toggle="Facebok" title="My Facebook profile"><i id="fb" class="fa fa-facebook"></i></a>
+                      <a href="http://www.github.com/sSwiergosz"> <i class="fa fa-github"></i></a>
+                      <a href="http://www.linkedin.com/in/szymon-świergosz-591347131"> <i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <figcaption>
+                    <div class="container">
+                    <div class="col-md-8">
+                      <h3 align="left">Szymon<span> Świergosz</span></h3>
+                      <p id="desc">
+                          I'm bioinformatics student
+                      </p>
+                    </div>
+
+                    <div class="col-md-4">
+                      <span class="glyphicon glyphicon-envelope"></span> szymon.swiergosz@gmail.com <br>
+                      <span class="glyphicon glyphicon-phone"></span> 799 919 375 <br>
+                      <span class="fa fa-globe"></span> Poznan, Poland
+                    </div>
+
+                    </div>
+                    </figcaption>
+                  </figure>
+              </div>
+          </div>
       </div>
+      
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <p id="lorem">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et fringilla erat. Mauris finibus tortor quam, a gravida eros imperdiet sed. Nunc vehicula cursus nunc, sed lacinia turpis interdum vel. Cras a porta erat. Aenean in laoreet magna. Curabitur placerat sit amet lorem eu auctor. Nulla interdum turpis nec nisl gravida ullamcorper. Nunc mattis dignissim lacus, ut pharetra nisl mattis a. In enim lacus, rhoncus ut dignissim nec, lacinia vitae ex. Proin neque augue, dapibus at tempor tempus, porttitor sed augue.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+      <div class="col-md-4 text-right">
+          <figure class="snip1546">
+            <img src="/home/szymek/Desktop/studia/webapps/4/images/blog.jpg" />
+            <figcaption>
+              <h3>Blog</h3><i class="fa fa-pencil"></i>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+      </div>
+      <div class="col-md-4 text-center">
+          <figure class="snip1546"><img src="/home/szymek/Desktop/studia/webapps/4/images/news.jpg" />
+            <figcaption>
+              <h3>News</h3><i class="fa fa-newspaper-o"></i>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+      </div>
+      <div class="col-md-4 text-left">
+          <figure class="snip1546"><img src="/home/szymek/Desktop/studia/webapps/4/images/contact.jpg" />
+            <figcaption>
+              <h3>Tools</h3><i class="fa fa-cogs"></i>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+      </div>
+      </div>
+
+      <footer>
+          <p id="ft">
+              2016 Szymon Świergosz 
+          </p>
+      </footer>
+
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
