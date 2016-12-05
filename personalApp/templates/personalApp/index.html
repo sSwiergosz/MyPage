@@ -1,0 +1,88 @@
+{% extends 'personalApp/base.html' %}
+{% load static %}
+{% block index_content %}
+<div class="container-fluid" id="mobile-social">
+        <div class="col-md-4 col-xs-4">
+          <a href="http://www.github.com/sSwiergosz"><i class="fa fa-github fa-5x"></i></a>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <a href="http://www.github.com/sSwiergosz"><i class="fa fa-facebook fa-5x"></i></a>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <a href="http://www.github.com/sSwiergosz"><i class="fa fa-linkedin fa-5x"></i></a>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="col-md-12 col-xs-12">
+          <figure class="main-img grey">
+            <img src="{% static "personalApp/img/IMG_2986.JPG" %}" id="my-img" />
+            <div class="icons">
+              <a href="http://www.facebook.com/szymon.swiergosz" ><i id="fb" class="fa fa-facebook" data-toggle="tooltip" title="My Facebook profile"></i></a>
+              <a href="http://www.github.com/sSwiergosz"><i class="fa fa-github" data-toggle="tooltip" title="My projects"></i></a>
+              <a href="http://www.linkedin.com/in/szymon-świergosz-591347131"><i class="fa fa-linkedin" data-toggle="tooltip" title="My Linkedin profile"></i></a>
+            </div>
+            <figcaption>
+              <div class="container">
+                <div class="col-md-8">
+                  <h3 align="left">Szymon<span> Świergosz</span></h3>
+                  <p id="desc">
+                    I'm bioinformatics student
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <span class="glyphicon glyphicon-envelope"></span> szymon.swiergosz@gmail.com <br>
+                  <span class="glyphicon glyphicon-phone"></span> 799 919 375 <br>
+                  <span class="fa fa-globe"></span> Poznan, Poland
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-md-12" id="lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et fringilla erat. Mauris finibus tortor quam, a gravida eros imperdiet sed. Nunc vehicula cursus nunc, sed lacinia turpis interdum vel. Cras a porta erat. Aenean in laoreet magna. Curabitur placerat sit amet lorem eu auctor. Nulla interdum turpis nec nisl gravida ullamcorper. Nunc mattis dignissim lacus, ut pharetra nisl mattis a. In enim lacus, rhoncus ut dignissim nec, lacinia vitae ex. Proin neque augue, dapibus at tempor tempus, porttitor sed augue.
+        </div>
+      </div>
+      <div class="container" id="blocks">
+        <div class="col-md-4 col-xs-12" >
+          <figure class="block-img">
+            <img src="{% static "personalApp/img/blog.jpg" %}"/>
+            <figcaption>
+              <h3>Blog</h3>
+              <i class="fa fa-pencil"></i>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <figure class="block-img">
+            <img src="{% static "personalApp/img/news.jpg" %}"/>
+            <figcaption>
+              <h3>News</h3>
+              <i class="fa fa-newspaper-o"></i>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <figure class="block-img">
+            <img src="{% static "personalApp/img/contact.jpg" %}"/>
+            <figcaption>
+              <h3>Tools</h3>
+              <i class="fa fa-cogs"></i>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+      </div>
+      <footer>
+        2016 Szymon Świergosz 
+      </footer>
+      
+{% endblock %}
+
+{% block _title %}
+  Main page
+{% endblock %}

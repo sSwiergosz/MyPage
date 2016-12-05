@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li {% if request.path == '/' %} class="active" {% endif %}><a href="{% url 'personalApp:home' %}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Blog</a></li>
+        <li {% if 'news' in request.path %} class="active" {% endif %}><a href="{% url 'personalApp:news' %}"><span class="glyphicon glyphicon-globe"></span> News</a></li>
+        <li {% if 'contact' in request.path %} class="active" {% endif %}><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+        <li {% if 'about' in request.path %} class="active" {% endif %}><a href="#"><span class="glyphicon glyphicon-user"></span> About me</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/home/szymek/Desktop/studia/webapps/3/domowe/dna.html">Seq modificator</a></li>
+            <li><a href="#">Tool 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-check"></span> Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
