@@ -1,6 +1,11 @@
 {% extends 'personalApp/base.html' %}
 {% load static %}
-{% block index_content %}
+
+{% block _title %}
+  Main page
+{% endblock %}
+
+{% block content %}
 <div class="container-fluid" id="mobile-social">
         <div class="col-md-4 col-xs-4">
           <a href="http://www.github.com/sSwiergosz"><i class="fa fa-github fa-5x"></i></a>
@@ -77,12 +82,5 @@
           </figure>
         </div>
       </div>
-      <footer>
-        2016 Szymon Świergosz 
-      </footer>
       
-{% endblock %}
-
-{% block _title %}
-  Main page
 {% endblock %}
