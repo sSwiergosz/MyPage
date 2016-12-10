@@ -20,13 +20,14 @@
             </div>
           </div>
         </form>
+        You can build queries like in PubMed, e.g. "Griffin[Author]"
       </div>
     </div>
   </div>
   <div class="col-md-7">
     {% for key, value in articles.items %}
       <h2 class="page-header">{{ key }}</h2>
-      {% if articles.values|length == 1 %}
+      {% if value.0|length > 1 %}
         {% for i in value %} 
           {% if not forloop.counter|divisibleby:3 %}
             <p id="authors">{{i}}</p>

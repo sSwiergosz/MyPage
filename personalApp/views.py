@@ -26,8 +26,9 @@ def news(request):
 		idlist = results['IdList']
 		handle = Entrez.efetch(db='pubmed', id=idlist, rettype='medline', retmode='text')
 		records = list(Medline.parse(handle))
+		print(records)
 		for record in records:
-			if record.get("AU") in records:
+			if "AU" in record:
 				d[record.get("TI")] = [', '.join(record.get("AU")), record.get("JT"), record.get("PMID"),]
 			else: #without authors and journals
 				if record.get("TI") is not None: #sometimes even title is missing...
@@ -36,3 +37,4 @@ def news(request):
 		d = {}
 
 	return render(request, 'personalApp/news.html', {'articles': d, 'search_value': term,})
+
