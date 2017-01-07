@@ -1,0 +1,18 @@
+{% extends 'personalApp/base.html' %}
+{% load static %}
+
+{% block _title %}
+  Contact
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid" id="contact-page">
+	<img src="{% static "personalApp/img/phone.jpg" %}" id="phone-img"/>
+	<div class="col-md-6 col-md-offset-5">
+		<div class="form-group">
+			<label for="exampleTextarea">Example textarea</label>
+    		<textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+		</div>
+	</div>
+</div>
+{% endblock %}
