@@ -273,11 +273,22 @@ footer {
     margin-left: 20px;
 }
 
+h2, h4 {
+	font-family: 'Raleway', Arial, sans-serif;
+	z-index: 11;
+	position: relative;
+}
+
+label {
+	font-family: 'Raleway', Arial, sans-serif;
+	margin-top: 10px;	
+}
+
 #phone-img {
     max-width: 100%;
     display: block;
     height: auto;
-    opacity: 0.55;
+    opacity: 0.75;
     position: absolute;
     top: 0;
     left: 0;
@@ -285,8 +296,15 @@ footer {
     position: fixed;
 }
 
-textarea {
-    margin-top: 40%;
+.form-group {
+	margin-top: 12%;
+}
+
+#submit-btn {
+	margin-top: 10px;
+}
+
+#contact-textarea {
     z-index: 11;
     position: relative;
 }

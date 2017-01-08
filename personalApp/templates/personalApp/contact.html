@@ -10,8 +10,38 @@
 	<img src="{% static "personalApp/img/phone.jpg" %}" id="phone-img"/>
 	<div class="col-md-6 col-md-offset-5">
 		<div class="form-group">
-			<label for="exampleTextarea">Example textarea</label>
-    		<textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+			<form action="mailto:szymon.swiergosz@gmail.com" method="post" enctype="text/plain">
+				<h2>SEND US A MESSAGE!</h2>
+				<h4>We will reply to every question</h4>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<label>NAME*</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="col-md-6">
+						<label>EMAIL*</label>
+						<input type="text" class="form-control" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<label>SUBJECT*</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="col-md-6">
+						<label>PHONE</label>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<label>MESSAGE*</label>
+			    		<textarea class="form-control" id="contact-textarea" rows="6" required></textarea>
+			    		<button type="submit" class="btn btn-primary" id="submit-btn">SEND MESSAGE</button>
+			    	</div>
+		    	</div>
+		    </form>
 		</div>
 	</div>
 </div>
