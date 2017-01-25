@@ -223,8 +223,7 @@ figure.main-img.hover a:nth-child(3) i {
     transform: translate(-50%, -50%);
     opacity: 1;
 }
-h1,
-p {
+h1, p {
     text-align: center;
 }
 body {
@@ -284,29 +283,8 @@ label {
 	margin-top: 10px;	
 }
 
-#phone-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    opacity: 0.75;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    position: fixed;
-}
-
-.form-group {
-	margin-top: 12%;
-}
-
 #submit-btn {
 	margin-top: 10px;
-}
-
-#contact-textarea {
-    z-index: 11;
-    position: relative;
 }
 
 button {
@@ -318,18 +296,18 @@ button {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 0.8em;
-    position: relative;
-    z-index: 10;
 }
-input {
-    z-index: 10;
-    position: relative;
+
+
+#contact-page {
+    margin-top: -50px;
+    height: 100vh;
+    background-image: url("../img/phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
 }
-.tooltip-inner {
-    white-space: nowrap;
-    max-width: none;
-}
-.input-group {
-    position: relative;
-    z-index: 10;
+
+#contact-form {
+    margin-top: 15vh;
 }
